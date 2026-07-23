@@ -1,20 +1,20 @@
 class Cohors < Formula
   desc "Terminal dashboard for cohors; builds the `cohors` binary."
   homepage "https://github.com/rushirb2001/cohors"
-  version "0.5.14"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.5.14/cohors-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "307c1730efa875f0f2cfe2620622c133da45364272c1a369851752747e99b7a4"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.6.0/cohors-tui-aarch64-apple-darwin.tar.xz"
+      sha256 "8788d92c82d9791db54df579a523b84caf3468434ede91a6537c408e31d6a110"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.5.14/cohors-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "efaf81f0ec2e38f23bd967b164c1f7434b442c82e3fbcea4d2b59940be3c52c9"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.6.0/cohors-tui-x86_64-apple-darwin.tar.xz"
+      sha256 "ab50b39fe7d434ca6bca59e45a643ae35be449df5e38362fbc76483f2ba10b78"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/rushirb2001/cohors/releases/download/v0.5.14/cohors-tui-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "ca03ed277d9baf4bbc712e23d2840f45d2f372ce1e117a453bb3ffb672518e76"
+    url "https://github.com/rushirb2001/cohors/releases/download/v0.6.0/cohors-tui-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "1455148714cb5b4a46b90bbcfb0b136465b4606ac57781c3614aaf005baada6f"
   end
   license "MIT"
 
