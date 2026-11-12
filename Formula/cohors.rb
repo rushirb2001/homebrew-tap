@@ -1,35 +1,35 @@
 class Cohors < Formula
   desc "Terminal dashboard for cohors; builds the `cohors` binary."
   homepage "https://github.com/rushirb2001/cohors"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.0/cohors-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "6f10bc3a2c9eac03961133e0b13ceac9d2bbac698d1f1cb17988284b952bbb85"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.1/cohors-tui-aarch64-apple-darwin.tar.xz"
+      sha256 "bfef9943a7d477d1806e38f7fc38f074d67a03d7d9d88b1020077952933b31f1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.0/cohors-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "6236435f9c702434d2855bacda563d20e8a500ba01dee5c551a09a31f994422f"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.1/cohors-tui-x86_64-apple-darwin.tar.xz"
+      sha256 "d2001ab13f97f8802f95d48df32e4f5cc3e27ba698eb05770f7cf24d4a3a90d2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.0/cohors-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a1a7a1ae328f233843a5cb3cfbc3a915529d14fa7e58ab05d1db42c344c7c1cb"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.1/cohors-tui-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "d5f3f29149342e2681e30112fe738f1897a638fdae66b5a0c34a85f8d19d5229"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.0/cohors-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8c31633bee28e8814b56644352daadb5447190971eadad85d57fff61de151314"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.1/cohors-tui-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "acaa693d54489ed512c1fe6f6ee59d852f4a14d6eeaff1a1ba1c115500a6cdd3"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
+    "aarch64-apple-darwin":      {},
     "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin": {},
-    "x86_64-unknown-linux-gnu": {}
-  }
+    "x86_64-apple-darwin":       {},
+    "x86_64-unknown-linux-gnu":  {},
+  }.freeze
 
   def target_triple
     cpu = Hardware::CPU.arm? ? "aarch64" : "x86_64"
