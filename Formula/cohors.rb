@@ -1,25 +1,25 @@
 class Cohors < Formula
-  desc "Terminal dashboard for cohors; builds the `cohors` binary."
+  desc "Every git repo you own, on one screen: a terminal dashboard, CLI and MCP server for your whole fleet of repositories."
   homepage "https://github.com/rushirb2001/cohors"
-  version "0.7.2"
+  version "0.7.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.2/cohors-tui-aarch64-apple-darwin.tar.xz"
-      sha256 "ade5771c92877b27de0593cbc09b637777eeb4ecbde357cae43c1f98e5d966a2"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.4/cohors-aarch64-apple-darwin.tar.xz"
+      sha256 "b5f7133ddb7698929c1ba822f5053214fafbc08291b550c48a932aed3cd9069b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.2/cohors-tui-x86_64-apple-darwin.tar.xz"
-      sha256 "fc2c17cc329debfdc49bd493af7621f7ba0bf747f76e1d5c59f355885b4d7177"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.4/cohors-x86_64-apple-darwin.tar.xz"
+      sha256 "89252bf969fd6575a81479edfe17484c012f8476a7fa1aa1797da1c75e4da2ef"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.2/cohors-tui-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "19f5f4ce523f140f6685c308b34d89c155ff31f5c8eba24932c39a459b259152"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.4/cohors-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "64b11085a9d6abb0c14b88582888d6c8b427c33c134c4bf62396b28651b44fdc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.2/cohors-tui-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "25831a74cb0771bd0bf42eb39f722fdf2cff3569871da0f68addb2318239f06e"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.7.4/cohors-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a780dc5a28bb62ffa72d2cbdb55efb02fe92db9121141f931dfa55334fe21d21"
     end
   end
   license "MIT"
