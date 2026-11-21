@@ -1,25 +1,25 @@
 class Cohors < Formula
   desc "Every git repo you own on one screen: terminal dashboard, CLI and MCP server"
   homepage "https://github.com/rushirb2001/cohors"
-  version "0.8.21"
+  version "0.9.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.8.21/cohors-aarch64-apple-darwin.tar.xz"
-      sha256 "eeaa7c65837b9abac0541ce36e9eb09b5a9dde47dee28e84ffedab1d525f75f9"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.9.2/cohors-aarch64-apple-darwin.tar.xz"
+      sha256 "e7e56fd3739b1c24b2f78b2ec27d49cfc612bfcdbf05fdfa4fa516c77b6d9444"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.8.21/cohors-x86_64-apple-darwin.tar.xz"
-      sha256 "faf89416f165291a64d6d805b7cf3d965933df17c547438e571dae32607c09ab"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.9.2/cohors-x86_64-apple-darwin.tar.xz"
+      sha256 "ad2c93cc880bea77b119866e7dbecc48a24b552bc6f2fe3042e5381f2ff5cdf5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.8.21/cohors-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "60c6136a7d079a432996e923b54558d748d66cf884967bcbf92d978178549f53"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.9.2/cohors-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f30d3b67e124cd8501da1c0420094ce0e20769c8a71bbc0763a40d8316d47e62"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rushirb2001/cohors/releases/download/v0.8.21/cohors-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "20f7822e2f598844063ab9109e24aa8a99acf161cbc28f4d1671f9d9b81a4c66"
+      url "https://github.com/rushirb2001/cohors/releases/download/v0.9.2/cohors-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1a426a6f524c8eb4db90d60ef7293b30056d9dda8ba371b08953316c5af867ee"
     end
   end
   license "MIT"
